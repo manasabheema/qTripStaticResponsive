@@ -1,0 +1,231 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  position: relative;  
+}
+
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+.navbar{
+  background-color:rgb(26, 85, 85) !important;
+  color: ghostwhite;
+}
+
+.navbar .navbar-toggler {
+  border-color: white;
+} 
+
+.navbar .navbar-toggler:hover {
+  border-color: black;
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(240, 243, 224, 0.9)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar .navbar-toggler .navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(7, 11, 5, 0.93)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+footer {
+  background: #f1f1f1;
+  width: 100%;
+  padding: 5px 0px;
+  color:	rgb(0, 102, 102);
+  vertical-align: bottom;
+  background-color: rgb(156, 197, 183);
+  width: 100%;
+}
+
+p>a{
+  color: orange !important;
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #999;
+  margin: 20px 0px;
+}
+
+.content {
+  padding: 20px 0px;
+}
+
+.row.display-flex{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row.display-flex > [class*='col-']{
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+/* ================================== */
+/* Layout page CSS */
+/* ================================== */
+
+.tile {
+  position: relative;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.tile img {
+  width: 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.tile img:hover {
+  filter: brightness(70%);
+  transform: scale(1.1,1.1);
+} 
+
+.tile-text>h5, .tile-text>p{
+  font-size: .8rem;
+} 
+
+.tile-text{
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  font-size: .8rem;
+  text-align: center;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  color:whitesmoke;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/hero.jpg");
+
+  height: 50vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-subheading {
+  font-size: 24px;
+  font-weight: 100;
+  color:white;
+}
+.hero-input {
+  width: 50%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.nav-link {
+  margin-right: 36px;
+}
+
+/* ================================== */
+/* Adventures grid page CSS */
+/* ================================== */
+
+.adventure-card {
+  position: relative;
+}
+
+.adventure-card img {
+  width: 100%;
+  height: 25vmin;
+}
+
+.card-block{
+  display: flex;
+  justify-content: space-between;
+  font-size: 2vmin;
+  font-variant: small-caps;
+  font-weight: 500;
+}
+.text{
+  font-stretch: expanded;
+  font-size: 4%vmin;
+}
+
+.adventure-card img:hover {
+  filter: brightness(60%);
+  cursor: pointer;
+}
+
+/* ================================== */
+/* Adventure details page CSS */
+/* ================================== */
+
+.container{
+  position: relative; 
+  margin-left: 27% !important;
+  margin-right: 27% !important;
+  margin-top: 45px;
+  padding: 0 !important;
+  width: auto !important;
+  margin-bottom: 15px;
+}
+
+@media screen and (orientation:portrait){
+  .container{
+    margin-left: 6% !important;
+    margin-right: 6% !important;
+  }
+}
+
+.adventure-detail-card {
+  position: relative;
+  height: 100%;
+  border-radius: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0,0,0,.125);
+  padding:15px 15px;
+  margin: 0 auto;
+}
+
+.adventure-card-image {
+  width: 100%; 
+  height: 100%; 
+  border-radius: 2px;
+
+}
+.adventure-card-image:hover {
+}
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+}
